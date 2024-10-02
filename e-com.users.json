@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "66fca5245631963288ffd079"
+  },
+  "name": "admin",
+  "email": "admin@yopmail.com",
+  "address": "Test Address",
+  "country": "India",
+  "city": "Coimbatore",
+  "phone": "9999999999",
+  "role": "Admin",
+  "password": "$2a$10$xNhchW8pWxCyiY3zCFMIc.obmEpzjIn4gTznUh/Vbs4Tu9NfpAwlG",
+  "createdAt": {
+    "$date": "2024-10-02T01:43:00.182Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T01:43:00.182Z"
+  },
+  "__v": 0
+}]
