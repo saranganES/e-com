@@ -64,8 +64,9 @@ const loginAdmin = async (req, res) => {
         },
       });
     } else {
-      res.status(401).send({
+      res.send({
         message: 'Invalid Email or password!',
+        status: false,
       });
     }
   } catch (err) {

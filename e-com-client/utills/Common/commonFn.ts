@@ -1,6 +1,6 @@
 import { ACCESS_TOKEN_FIELD_NAME } from '@/constants/common';
 import { Status, toastNotification } from '../Toaster';
-import cookie from "cookie";
+import cookie from 'cookie';
 
 function titleToSlug(title: string) {
   return title
@@ -14,7 +14,7 @@ function checkResponse(status: number, message: string) {
   if (status) {
     toastNotification(Status.SUCCESS, message);
   } else {
-    if (status) toastNotification(Status.ERROR, message);
+    toastNotification(Status.ERROR, message);
   }
 }
 
@@ -44,7 +44,7 @@ const tokenToEmail = (reqCookie: any) => {
   const cookies = reqCookie ? cookie.parse(reqCookie) : {};
   const userCID: any = cookies[ACCESS_TOKEN_FIELD_NAME] || null;
   const userDetails = parseJwt(userCID);
-  return userDetails.email
+  return userDetails.email;
 };
 
 export {
@@ -53,5 +53,5 @@ export {
   parseJwt,
   separateNumberAndString,
   validator,
-  tokenToEmail
+  tokenToEmail,
 };
