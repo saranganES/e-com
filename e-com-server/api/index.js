@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json({ limit: '4mb' }));
 app.use(helmet());
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
